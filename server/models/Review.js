@@ -1,0 +1,24 @@
+import mongoose from "mongoose";
+
+const ReviewSchema=new mongoose.Schema({
+
+name:String,
+
+rating:Number,
+
+message:String
+
+},
+{
+
+timestamps:true
+
+});
+
+export default mongoose.model(
+
+"Review",
+
+ReviewSchema
+
+);
